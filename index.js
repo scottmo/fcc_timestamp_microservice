@@ -3,7 +3,7 @@ var path = require("path");
 var moment = require("moment");
 
 var app = express();
-var port = 8080;
+var port = process.env.PORT || 8080;
 
 app.get('/', function (req, res) {
   var fileName = path.join(__dirname, 'index.html');
